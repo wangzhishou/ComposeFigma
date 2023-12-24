@@ -1,0 +1,483 @@
+{
+  "name": "item_card",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "j5yJi12fz7XxwEe44C86OO",
+    "node": "1:17",
+    "version": "4862056292",
+    "component-id": "facbd9e43b7436b6502dce19eba2dd07a8824d87"
+  },
+  "default": "ItemCard",
+  "documentation": "card",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Picture"
+      },
+      {
+        "type": "group",
+        "id": "Content"
+      },
+      {
+        "type": "group",
+        "id": "ToolBar"
+      },
+      {
+        "type": "image",
+        "id": "card"
+      },
+      {
+        "type": "text",
+        "id": "title"
+      },
+      {
+        "type": "text",
+        "id": "description"
+      },
+      {
+        "type": "group",
+        "id": "likes"
+      },
+      {
+        "type": "group",
+        "id": "share"
+      },
+      {
+        "type": "group",
+        "id": "comment"
+      },
+      {
+        "type": "text",
+        "id": "like_number"
+      },
+      {
+        "type": "vector",
+        "id": "like_icon"
+      },
+      {
+        "type": "text",
+        "id": "share_number"
+      },
+      {
+        "type": "vector",
+        "id": "share_icon"
+      },
+      {
+        "type": "text",
+        "id": "comment_number"
+      },
+      {
+        "type": "vector",
+        "id": "comment_icon"
+      }
+    ],
+    "modes": {
+      "ItemCard": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": "24.0",
+            "border-radius": "8.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Picture",
+              "Content",
+              "ToolBar"
+            ],
+            "item-spacing": "16.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Picture",
+            "border-radius": "12.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "280.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "188.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "card"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8705882352941177"
+            }
+          },
+          {
+            "id": "Content",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "title",
+              "description"
+            ],
+            "item-spacing": "8.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "ToolBar",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "280.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "likes",
+              "share",
+              "comment"
+            ]
+          },
+          {
+            "id": "card",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-30.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "280.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "415.0"
+              }
+            },
+            "image-content": "card.jpeg",
+            "scale": "cover"
+          },
+          {
+            "id": "title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "128.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Name",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "38.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "description",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "280.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Please add your content here. Keep it short and simple. And smile :) ",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "likes",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "6.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "8.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "44.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "like_number",
+              "like_icon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "share",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "81.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "8.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "16.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "share_number",
+              "share_icon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "comment",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "157.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "comment_number",
+              "comment_icon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "like_number",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "20k",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "like_icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-1.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-1.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "19.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            },
+            "vector-content": "like_icon.svg"
+          },
+          {
+            "id": "share_number",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "22.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "567",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "share_icon",
+            "margin": {
+              "right": "27.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "share_icon.svg"
+          },
+          {
+            "id": "comment_number",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "26.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "3.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "34",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "comment_icon",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "vector-content": "comment_icon.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "ItemCard",
+      "size": {
+        "width": 328.0,
+        "height": 388.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
