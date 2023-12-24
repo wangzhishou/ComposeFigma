@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calendar">万年历</string>
+    <string name="calendar_description">农历查询、黄道吉日查询,提供免费搬家吉日查询。</string>
+
+</resources>
